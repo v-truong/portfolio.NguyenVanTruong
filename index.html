@@ -1,125 +1,151 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Truong Dev | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyen Van Truong - Backend Engineer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <h2>TruongDev</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <header class="hero">
+    <div class="container">
+      <h1>Nguyen Van Truong</h1>
+      <p class="subtitle">Backend Engineer • Java • Microservices • Banking Systems</p>
+      <div class="actions">
+        <a href="NGUYEN-VAN-TRUONG.pdf" download class="btn primary">Download CV</a>
+        <a href="#projects" class="btn ghost">Projects</a>
+      </div>
+    </div>
+  </header>
 
-<section class="hero">
-  <h1>Nguyễn Văn Trường</h1>
-  <h3>Java Backend Developer</h3>
-  <p>3+ years | Spring Boot | Microservices | Banking Systems</p>
+  <section class="container about">
+    <h2>About</h2>
+    <p>
+      Backend developer with 3+ years of experience working on large-scale banking systems.
+      Strong in Java, Spring Boot, and microservices. Experienced in system integration,
+      high-performance API development, and distributed systems.
+    </p>
+  </section>
 
-  <a href="NGUYEN-VAN-TRUONG.pdf" target="_blank" class="btn">
-    👀 View CV
-  </a>
+  <section class="container skills">
+    <h2>Tech Stack</h2>
+    <div class="tags">
+      <span>Java</span><span>Spring Boot</span><span>Hibernate</span>
+      <span>Microservices</span><span>Redis</span><span>PostgreSQL</span>
+      <span>Oracle</span><span>Kubernetes</span><span>Docker</span>
+      <span>Jenkins</span><span>Mulesoft</span><span>DataWeave</span>
+    </div>
+  </section>
 
-  <a href="NGUYEN-VAN-TRUONG.pdf" download class="btn-download">
-    ⬇ Download CV
-  </a>
-</section>
+  <section id="projects" class="container">
+    <h2>Projects</h2>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Backend Developer với hơn 3 năm kinh nghiệm phát triển hệ thống ngân hàng
-    như Techcombank, TPBank, Vietcombank. Chuyên về Java, Spring Boot,
-    Microservices và tối ưu hệ thống lớn.
-  </p>
-</section>
+    <div class="project">
+      <div class="left">
+        <h3>T24 Integration - Techcombank</h3>
+        <p>Core banking integration, real-time data processing.</p>
+        <small>Reduced latency, improved reliability</small>
+      </div>
+      <div class="right">
+        <span>Mulesoft</span><span>Java</span><span>DataWeave</span>
+      </div>
+    </div>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Java</span>
-    <span>Spring Boot</span>
-    <span>Hibernate</span>
-    <span>Microservices</span>
-    <span>Mulesoft</span>
-    <span>MySQL</span>
-    <span>PostgreSQL</span>
-    <span>Oracle</span>
-    <span>Redis</span>
-    <span>Kubernetes</span>
-    <span>Docker</span>
-    <span>Jenkins</span>
-    <span>Keycloak</span>
-    <span>Grafana</span>
-  </div>
-</section>
+    <div class="project">
+      <div class="left">
+        <h3>XLOS - TPBank</h3>
+        <p>Loan system integrated with CIC, S11T.</p>
+        <small>Handled multi-service integration</small>
+      </div>
+      <div class="right">
+        <span>Spring</span><span>Oracle</span><span>Microservices</span>
+      </div>
+    </div>
 
-<section id="projects">
-  <h2>Projects</h2>
+    <div class="project">
+      <div class="left">
+        <h3>Agency - TPBank</h3>
+        <p>Banking transaction system.</p>
+        <small>Secure API & authentication flow</small>
+      </div>
+      <div class="right">
+        <span>Spring</span><span>Oracle</span>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3>Techcombank - T24 Integration</h3>
-    <p>Role: Mulesoft Developer | Team: 7</p>
-    <p>Tích hợp hệ thống T24 bằng DataWeave.</p>
-    <p><b>Tech:</b> Java, Mulesoft, Jenkins</p>
-  </div>
+    <div class="project">
+      <div class="left">
+        <h3>VSS - Vietcombank</h3>
+        <p>Securities system with caching.</p>
+        <small>Improved performance using Redis</small>
+      </div>
+      <div class="right">
+        <span>Redis</span><span>K8S</span><span>Grafana</span>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3>TPBank XLOS</h3>
-    <p>Role: Backend Developer | Team: 18</p>
-    <p>Hệ thống kiểm tra hạn mức vay.</p>
-    <p><b>Tech:</b> Spring Boot, Oracle</p>
-  </div>
+    <div class="project">
+      <div class="left">
+        <h3>M&A Platform</h3>
+        <p>Enterprise e-commerce system.</p>
+        <small>Optimized DB & APIs</small>
+      </div>
+      <div class="right">
+        <span>Postgres</span><span>K8S</span>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3>TPBank Agency</h3>
-    <p>Ứng dụng giao dịch ngân hàng bằng CCCD.</p>
-  </div>
+    <div class="project">
+      <div class="left">
+        <h3>ESMART</h3>
+        <p>Employee testing & evaluation system.</p>
+        <small>Built backend & evaluation logic</small>
+      </div>
+      <div class="right">
+        <span>Spring</span><span>Redis</span>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3>Vietcombank Securities</h3>
-    <p>Quản lý chứng khoán.</p>
-  </div>
+    <div class="project">
+      <div class="left">
+        <h3>TMS</h3>
+        <p>Sales support & customer distribution system.</p>
+        <small>Designed API & business logic</small>
+      </div>
+      <div class="right">
+        <span>Spring</span><span>JDBC</span>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3>M&A Platform</h3>
-    <p>Hệ thống thương mại điện tử B2B/B2C.</p>
-  </div>
+    <div class="project">
+      <div class="left">
+        <h3>LGSP Platform</h3>
+        <p>Government data integration platform.</p>
+        <small>Integrated multi-source data systems</small>
+      </div>
+      <div class="right">
+        <span>Spring</span>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3>ESMART</h3>
-    <p>Hệ thống đánh giá nhân viên.</p>
-  </div>
+  </section>
 
-  <div class="project">
-    <h3>TMS</h3>
-    <p>Quản lý khách hàng tiềm năng.</p>
-  </div>
+  <section class="container experience">
+    <h2>Experience</h2>
+    <p><strong>Backend Developer</strong> • 2023 - Present</p>
+    <p>Worked on banking systems, government platforms, and enterprise applications.</p>
+  </section>
 
-  <div class="project">
-    <h3>LGSP</h3>
-    <p>Nền tảng tích hợp dữ liệu.</p>
-  </div>
+  <section class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>📞 0868183650</p>
+      <p>📧 truongdev203@gmail.com</p>
+      <p>💻 github.com/v-truong</p>
+    </div>
+  </section>
 
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>📞 0868183650</p>
-  <p>📧 truongdev203@gmail.com</p>
-  <p>💻 Github: https://github.com/v-truong</p>
-</section>
-
-<footer>
-  <p>© 2026 Truong Dev</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
