@@ -10,3 +10,34 @@ document.addEventListener("DOMContentLoaded", () => {
     }, i * 100);
   });
 });
+
+
+// CURSOR GLOW
+const glow = document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove", (e) => {
+  glow.style.left = e.clientX + "px";
+  glow.style.top = e.clientY + "px";
+});
+
+// SCROLL ANIMATION
+const elements = document.querySelectorAll(".project, .tags span, h2, p");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+elements.forEach(el => {
+  el.classList.add("fade");
+  observer.observe(el);
+});
+
+// PARALLAX HERO
+window.addEventListener("scroll", () => {
+  const scroll = window.scrollY;
+  document.querySelector(".hero").style.transform = `translateY(${scroll * 0.2}px)`;
+});
